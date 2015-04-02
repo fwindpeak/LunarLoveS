@@ -139,6 +139,11 @@ function remove_more_link_scroll( $link ) {
 	return $link;
 }
 add_filter( 'the_content_more_link', 'remove_more_link_scroll' );
+//remove admin-bar
+function hide_admin_bar($flag) {
+return false;
+}
+add_filter('show_admin_bar','hide_admin_bar');
 
 //Ajax comment by fatesinger.com,modify by ArianeLu
 require get_template_directory() . '/inc/ajax-comment-init.php';
