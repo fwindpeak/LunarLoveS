@@ -34,8 +34,8 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 	border: 0;
 	font-family:"Roboto","Noto Sans Chinese Regular","Microsoft YaHei","文泉驿微米黑";
 	font-size: 100%;
-	font-style: inherit;
-	font-weight: inherit;
+/* 	font-style: inherit;
+	font-weight: inherit; */
 	margin: 0;
 	outline: 0;
 	padding: 0;
@@ -54,7 +54,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb:vertical{ 
-    background-color:#FF82C1; 
+    background-color:#82BBA1; 
 } 
 ::-webkit-scrollbar{ 
     width:8px; 
@@ -121,15 +121,17 @@ textarea {
 	font-size: 16px;
 	line-height: 1.5;
 }
-::selection { background:#FF82C1; color:#FFFFFF; }
+::selection { background:#82B0A0; color:#FFFFFF; }
 
-::-moz-selection { background:#FF82C1; color:#FFFFFF; } 
+::-moz-selection { background:#82B0A0; color:#FFFFFF; } 
 
-::-webkit-selection { background:#FF82C1; color:#FFFFFF; }
+::-webkit-selection { background:#82B0A0; color:#FFFFFF; }
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
+    margin-bottom:10px;
+    margin-top:10px;
     cursor:default;
 }
 hr {
@@ -160,25 +162,24 @@ b, strong {
 	font-weight: bold;
 }
 dfn, em, i {
-	font-style: italic;
+	/* font-style: italic; */
 }
 address {
 	margin: 0 0 1.5em;
 }
-pre {
+/* pre {
 	background: #eee;
 	font-family:"Roboto","Noto Sans Chinese Regular","Microsoft YaHei","文泉驿微米黑";
 	font-size: 15px;
 	font-size: 1.5rem;
 	line-height: 1.6;
-	margin-bottom: 1.6em;
 	max-width: 100%;
 	overflow: auto;
-	padding: 1.6em;
+	padding: 0.1em;
 }
 code, kbd, tt, var {
 	font: 15px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-}
+} */
 abbr, acronym {
 	border-bottom: 1px dotted #666;
 	cursor: help;
@@ -690,7 +691,7 @@ object {
     background-color: #FBFBFB;
     padding:10px 20px 9px 20px;
     line-height: 18px;
-    border-left: 3px solid #9966FF;
+    border-left: 3px solid #50A099;
     border-bottom: 1px solid #EBEBEB;
     border-top: 1px solid #EBEBEB;
     border-right: 1px solid #EBEBEB;
@@ -718,20 +719,12 @@ blockquote p {
     border-radius: 5px;
     padding:10px 10px 10px 10px;
     margin-bottom:10px;
-    font-style:italic;
+    /* font-style:italic; */
 }
 blockquote p {
     margin:0 auto;
 }
-code {
-    display:block;
-    background:#F2FFF2;
-    color:#714E9E !important;
-    border:1px dashed rgba(113,78,158,0.3);
-    border-radius: 5px;
-    padding:10px 10px 10px 10px;
-    margin-bottom:10px;
-}
+
 /* =Footer
 ----------------------------------------------- */
 .site-footer {
@@ -754,7 +747,7 @@ code {
 }
 .admin-login {
     cursor:default;
-    color:#9966FF !important;
+    color:#50A099 !important;
 }
 .site-info {
     margin-top: 15px;
@@ -819,12 +812,12 @@ textarea {
 	resize:none
 }
 input[type=text]:hover,textarea:hover {
-	border: 1px solid #9966FF !important;
+	border: 1px solid #50A099 !important;
 }
 
 input[type=text]:focus,textarea:focus {
-	box-shadow: 0px 0px 2px #9966FF;
-	border: 1px solid #9966FF !important;
+	box-shadow: 0px 0px 2px #50A099;
+	border: 1px solid #50A099 !important;
 }
 .comment-awaiting-moderation {
     color:red;
@@ -858,4 +851,100 @@ input[type=text]:focus,textarea:focus {
 }
 .comments-title {
     font-size: 16px;
+}
+
+
+/***************************************************************************************/
+
+
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+
+pre, code, tt {
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
