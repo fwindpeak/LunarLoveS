@@ -323,7 +323,7 @@ textarea {
   color: rgba(0,0,0,0.3);
 }
 /* Links */
-a {
+/* a {
     text-decoration:none;
 	color:#62A6E4;
     transition: color 200ms ease-in-out;
@@ -336,7 +336,7 @@ a:hover,
 a:focus,
 a:active {
     color:#005CAD;
-}
+} */
 /* Alignment */
 .alignleft {
 	display: inline;
@@ -399,10 +399,10 @@ a:active {
 	float: left;
 	position: relative;
 }
-.main-navigation a {
+/* .main-navigation a {
 	display: block;
 	text-decoration: none;
-}
+} */
 .main-navigation ul ul {
 	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 	display: none;
@@ -416,7 +416,7 @@ a:active {
 	left: 100%;
 	top: 0;
 }
-.main-navigation ul ul a {
+.main-navigation ul ul {
 	width: 200px;
 }
 .main-navigation ul ul li {
@@ -446,7 +446,7 @@ a:active {
     margin-right: auto;
     max-width: 1160px;
     min-width: 960px;
-    height: 50px;
+    height: 50px; 
 }
 /* =Content
 ----------------------------------------------- */
@@ -474,7 +474,7 @@ a:active {
 	margin: 0 0 1.5em;
 }
 .search-form {
-    margin-bottom:15px;
+    /* margin-bottom:15px; */
 }
 .search-field {
     vertical-align:middle;
@@ -655,8 +655,13 @@ object {
 }
 /* =Main Artical
 ----------------------------------------------- */
+.entry-header{
+    /* text-align: center; */
+}
+
 .entry-title {
-    font-size:24px;
+    font-size:32px;
+    
 }
 .entry-title a {
     color:#505050;
@@ -680,11 +685,12 @@ object {
     color:#404040;
 }
 .entry-content {
-    border-bottom:1px dashed #EEE;
+    margin-bottom:10px;
+    border-bottom:2px dashed #80F090;
     padding-bottom:20px;
 }
 .entry-content h1 {
-    font-size: 28px;
+    font-size: 24px;
 }
 .entry-content h2 {
     font-size: 18px;
